@@ -9,27 +9,27 @@ const p string = "death & taxes"
 
 // You can declare multiple constants at once
 const (
-	pi = 3.14
+	pi       = 3.14
 	language = "Go"
 )
 
 // an iota is a very small quantity
 const (
-	a = iota  //0
-	b = iota  //1
-	c = iota  //2
+	a = iota //0
+	b = iota //1
+	c = iota //2
 )
 
 // If you declare new iotas in a different declaration they will reset back to 0
 const (
 	d = iota //0 - Also you do not have to type iota after the first declaration
-	e	 //1
-	f	 //2
+	e        //1
+	f        //2
 )
 
 // Additional logic can be added to manipulate iotas such a '*'
 const (
-	g = iota //0
+	g = iota      //0
 	h = iota * 10 // 1 * 10
 	i = iota * 10 // 2 * 10
 )
@@ -43,7 +43,7 @@ const (
 	gb = 1 << (iota * 10) // 1 << (2 * 10)
 )
 
-func main()  {
+func main() {
 
 	const q = 42
 
