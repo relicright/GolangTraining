@@ -43,4 +43,34 @@ func main() {
 	//YOU CAN SORT SLICES IN MANY DIFFERENT WAYS USING THE 'SORT' PACKAGE
 	sort.Ints(numbers)
 	fmt.Println(numbers)
+
+
+	// Append a slice to another slice
+	// Create your first slice of 'int'
+	slice1 := make([]int, 5, 50)
+	slice1[0] = 0
+	slice1[1] = 1
+	slice1[2] = 2
+	slice1[3] = 3
+	slice1[4] = 4
+
+	// Make a new slice to add to 'slice1'
+	newslice := []int {5,6,7,8,9}
+
+	// You can append one slice to another by adding the '...' epression at the end of the variavle name
+	slice1 = append(slice1, newslice...)
+
+	fmt.Println("New slice added to 'slice1':\n", slice1[:])
+
+
+	//You can append slices at their specific index using the '[:]' indexing
+	mySlice := []string {"monday", "tuesday"}
+	myOtherSlice := []string {"wednesday", "thursday", "friday"}
+
+	mySlice = append(mySlice, myOtherSlice...)
+	fmt.Println(mySlice)
+
+	mySlice = append(mySlice[:2], mySlice[3:]...)
+	fmt.Println(mySlice)
+
 }
