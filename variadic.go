@@ -11,7 +11,7 @@ func main() {
 	fmt.Println(n)
 }
 
-func average(sf ...float64) float64  {
+func average(sf ...float64) float64 {
 
 	// Display what we have in 'sf' to the console
 	fmt.Println(sf)
@@ -33,14 +33,12 @@ func average(sf ...float64) float64  {
 	return total / float64(len(sf))
 }
 
-
 // If you're looping over an array, slice, string, or map, or reading from a channel, a range clause can manage the loop.
 /*
 	for key, value := range oldMap {
 	    newMap[key] = value
 	}
- */
-
+*/
 
 //If you only need the first item in the range (the key or index), drop the second:
 /*
@@ -49,8 +47,7 @@ func average(sf ...float64) float64  {
 		delete(m, key)
 	    }
 	}
- */
-
+*/
 
 // If you only need the second item in the range (the value), use the blank identifier, an underscore, to discard the first:
 /*
@@ -58,4 +55,4 @@ func average(sf ...float64) float64  {
 	for _, value := range array {
 	    sum += value
 	}
- */
+*/

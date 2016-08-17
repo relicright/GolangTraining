@@ -47,19 +47,16 @@ func main() {
 		fmt.Println("Hey Joe")
 	}
 
-
 	// Calls a switch function that evaluated the overload type
 	SwitchOnType(Contact{})
 }
-
 
 // Switch can be on type
 
 type Contact struct {
 	greeting string
-	name string
+	name     string
 }
-
 
 func SwitchOnType(x interface{}) {
 	switch x.(type) { // this is an asset; asserting "x is of a certain type"

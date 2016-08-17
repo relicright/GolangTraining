@@ -1,14 +1,14 @@
 package main
 
 import (
-"fmt"
+	"fmt"
 )
 
-func hello()  {
+func hello() {
 	fmt.Println("hello")
 }
 
-func world()  {
+func world() {
 	fmt.Println("world")
 }
 
@@ -22,10 +22,9 @@ func main() {
 	defer world()
 	hello()
 
-
 }
 
-func retNum()  {
+func retNum() {
 
 	// Display to show the beginning of the block
 	fmt.Println("Beginning of block")

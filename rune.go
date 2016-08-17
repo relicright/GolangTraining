@@ -16,7 +16,7 @@ func main() {
 
 	// Run a 'for' loop to display characters from 30 - 40
 	for i := 30; i <= 40; i++ {
-			//value    conv to strng      slice string into bytes to show byte conversions for each character
+		//value    conv to strng      slice string into bytes to show byte conversions for each character
 		fmt.Println(i, " -", string(i), " -", []byte(string(i)))
 	}
 
@@ -33,6 +33,5 @@ func main() {
 	// even though the int32 foo variable is being converted to a rune/
 	// it still shows int32, because a rune is an alias for an int32
 	fmt.Printf("%T \n", rune(foo))
-
 
 }

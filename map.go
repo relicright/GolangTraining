@@ -36,7 +36,7 @@ func main() {
 	keys := make([]string, len(states))
 
 	i := 0
-	for k:= range states {
+	for k := range states {
 		keys[i] = k
 		i++
 	}

@@ -2,12 +2,12 @@ package main
 
 import "fmt"
 
-func filter(numbers []int, callback func(int) bool) []int  {
+func filter(numbers []int, callback func(int) bool) []int {
 
 	var xs []int
 
 	// go over each value in numbers using range
-	for _, val := range numbers{
+	for _, val := range numbers {
 
 		// Callback to the passed in function which returns a bool
 		// (n > 1) or (val > 1)
@@ -25,7 +25,7 @@ func filter(numbers []int, callback func(int) bool) []int  {
 
 func main() {
 	// This is capturing the returned slice of ints from the function 'filter'
-	xs := filter([]int {1, 2, 3, 4}, func(n int) bool {
+	xs := filter([]int{1, 2, 3, 4}, func(n int) bool {
 
 		// the callback returns a bool - if n > 1 = true/false
 		return n > 1

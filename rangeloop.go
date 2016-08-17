@@ -3,12 +3,12 @@ package main
 import "fmt"
 
 func main() {
-	newmap := map[string]string {
+	newmap := map[string]string{
 		"Zero": "first", "one": "second", "two": "third",
 	}
 
 	// Range loops over a slice or map and return a 'key/index' and a value
-	     //key     value            map
+	// key   value            map
 	for key, value := range newmap {
 		fmt.Println("The key/index is: ", key, " and the value of the key is:", value)
 	}

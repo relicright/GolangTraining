@@ -2,7 +2,6 @@ package main
 
 import "fmt"
 
-
 // Recursion is when a function calls itself
 func factorial(x int) int {
 
@@ -16,7 +15,6 @@ func factorial(x int) int {
 	// it will run the 'factoral()' function again.
 	return x * factorial(x-1)
 }
-
 
 func main() {
 	// Display each iteration of the factoral function

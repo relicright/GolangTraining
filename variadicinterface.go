@@ -19,8 +19,7 @@ func main() {
 
 // To make a function that can take in multiple arguments in a single variable you must use the '...' expression
 // before the data type you want to use
-func variadicinterface(varint ...interface{})  {
-
+func variadicinterface(varint ...interface{}) {
 
 	// Range returns (key/index - value)
 	for _, v := range varint {
@@ -33,7 +32,8 @@ func variadicinterface(varint ...interface{})  {
 			fmt.Println("this is a float64")
 		case string:
 			fmt.Println("This is a string")
-			default: fmt.Println("This is the default")
+		default:
+			fmt.Println("This is the default")
 		}
 	}
 }

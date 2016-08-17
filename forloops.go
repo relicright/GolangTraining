@@ -27,14 +27,13 @@ func main() {
 		}
 	}
 
-
 	// 'for' statements can run endlessly as well
 	i := 0
 
 	for {
 		i++
 		// check the remainder of i
-		if i % 2 == 0 {
+		if i%2 == 0 {
 
 			// 'continue' starts the loop from the beginning
 			continue
