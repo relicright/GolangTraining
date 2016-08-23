@@ -30,18 +30,34 @@ func main() {
 	//// Sort through types without 'sort.interface'
 	/////////////////////////////////////////////////////
 
-	// In the instance that a non-type '[]string' needs to be sorted,
+	// In the instance that variable without type 'sort', but '[]string' needs to be sorted,
 	// You would assign the '[]string' to a variable, in this case 's'
 	s := []string{"Zeno", "John", "Al", "Jenny"}
 
 	// You will then need to give 's' the 'sort.interface'
 	// 'sort.StringSlice()' will attach the methods of  'sort.interface'
 	// to []string
-	sort.StringSlice(s).Sort()
+	newsort := sort.StringSlice(s)
 	// or
-	sort.Sort(sort.StringSlice(s))
+	sort.Sort(newsort)
+    // or 
+    sort.StringSlice(s).Sort()
 
 	// Now that 's' has the 'sort.interface' methods attached to it,
 	// and it has been sorted above, we can print the result.
 	fmt.Println(s)
+
+
+    ////////////////////////////////////////////////////
+    //// Sort through []int without 'sort.interface'
+    ///////////////////////////////////////////////////
+
+    n := []int {3,9,12,55,2,1,93}
+
+    // 'sort.IntSlice()' attaches the methods of 'sort.interface' to
+    // the variable in order for it to be compatible with the 'Sort()' function
+    sort.IntSlice(n).Sort()
+
+    // Print the sorted []int
+    fmt.Println(n)
 }
