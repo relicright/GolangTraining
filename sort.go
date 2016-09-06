@@ -60,4 +60,9 @@ func main() {
 
     // Print the sorted []int
     fmt.Println(n)
+
+    // Sort in reverse
+    sort.Sort(sort.Reverse(sort.IntSlice(n)))
+
+    fmt.Println(n)
 }
