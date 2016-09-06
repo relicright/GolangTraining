@@ -1,17 +1,17 @@
 package main
 
 import (
-	"fmt"
-	"net/http"
-	"log"
 	"bufio"
+	"fmt"
+	"log"
+	"net/http"
 )
 
 func main() {
 	//get the book 'Huck Finn'
 	res, err := http.Get("https://www.gutenberg.org/files/76/76-0.txt")
 
-	if err != nil{
+	if err != nil {
 		log.Fatalln(err)
 	}
 

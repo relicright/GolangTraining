@@ -1,10 +1,10 @@
 package main
 
 import (
-	"fmt"
-	"net/http"
-	"log"
 	"bufio"
+	"fmt"
+	"log"
+	"net/http"
 )
 
 func main() {
@@ -27,7 +27,6 @@ func main() {
 	// unicode.IsSpace.
 	byteslice.Split(bufio.ScanWords)
 
-
 	// Scan advances the Scanner to the next token, which will then be
 	// available through the Bytes or Text method. It returns false when the
 	// scan stops, either by reaching the end of the input or an error.
@@ -39,4 +38,3 @@ func main() {
 	}
 
 }
-

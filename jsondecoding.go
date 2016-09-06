@@ -1,15 +1,15 @@
 package main
 
 import (
+	"encoding/json"
 	"fmt"
 	"strings"
-	"encoding/json"
 )
 
 type Person struct {
-	Firstt string `json:"First"`
-	Last string
-	Age int
+	Firstt      string `json:"First"`
+	Last        string
+	Age         int
 	notExported int
 }
 
@@ -29,4 +29,3 @@ func main() {
 	fmt.Println(p1.Last)
 	fmt.Println(p1.Age)
 }
-

@@ -1,16 +1,16 @@
 package main
 
 import (
-	"fmt"
 	"encoding/json"
+	"fmt"
 )
 
 type Person struct {
 	// Variables in a struct must have an uppercase letter at the
 	// beginning in order for the value to be exported to JSON
 	First string
-	Last string
-	Age int
+	Last  string
+	Age   int
 
 	// If a variable does not have a capital first letter it will
 	// not be exported
