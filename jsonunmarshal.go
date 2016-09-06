@@ -1,16 +1,16 @@
 package main
 
 import (
-"fmt"
-"encoding/json"
+	"encoding/json"
+	"fmt"
 )
 
 type Person struct {
 	// This tag shows that json can be unmarshal() by using the json tag
 	// as the identifier
 	Firstt string `json:"First"`
-	Last string
-	Age int
+	Last   string
+	Age    int
 }
 
 func main() {

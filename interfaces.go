@@ -38,7 +38,7 @@ type Shape interface {
 // Now in a new function we set the parameters to take a 'Shape'
 // Since 'Square' and 'Circle' both implement the 'area()' function,
 // They are both eligible to be used as a 'Shape' interface.
-func info(z Shape)  {
+func info(z Shape) {
 
 	fmt.Println(z)
 	fmt.Println(z.area())
