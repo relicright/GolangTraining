@@ -1,0 +1,17 @@
+<html>
+<head>
+    <title>Title</title>
+</head>
+<body>
+
+<!-- Keywords and interfaces can be found at https://godoc.org/text/template -->
+<!-- Range over the 'Name' identifier that was injected into the HTML page via 'template.Execute' -->
+<!--Hello, still here {{range .Name}}
+    <li>{{.}}</li>
+    {{end}}
+-->
+
+    <!-- Display a single variable from the injected struct -->
+    My age is {{.Age}}
+</body>
+</html>
