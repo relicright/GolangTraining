@@ -15,7 +15,7 @@ func main() {
 	templates := template.Must(template.ParseFiles("templates/index1.html", "templates/index2.html"))
 
 	//HandleFun functions can be used for different root types to display different templates when the
-	// browser request different directories
+	// browser requests different directories
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request){
 
 		p := Page{"Random", "41"}
