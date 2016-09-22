@@ -26,6 +26,11 @@ func (c CatHandler) ServeHTTP(w http.ResponseWriter, r *http.Request){
 	// print out the text in the string.
 	w.Header().Set("Content-Type", "text/html; charset=utf-8")
 	io.WriteString(w, `<img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Golde33443.jpg">`)
+
+	//https://godoc.org/net/url
+	//'*http.Request' contains a variable 'URL' that is of type '*url.URL'
+	// we can then use the different variables inside the 'URL' struct
+	io.WriteString(w, "<h1>" + r.URL.RawQuery + "</h1>")
 }
 
 func main() {
