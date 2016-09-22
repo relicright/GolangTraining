@@ -53,7 +53,7 @@ func main() {
 		}
 
 		if err := templates.ExecuteTemplate(w, "upload.html", nil); err != nil{
-			http.Error(w, err.Error(), 500)\
+			http.Error(w, err.Error(), 500)
 			log.Println(err)
 			return
 		}
