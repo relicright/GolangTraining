@@ -16,6 +16,8 @@ func getCode(data string) string {
 	// 'hmac.New' returns a new HMAC hash using the given hash.Hash type and key.
 	//            hash.Hash          key
 	h := hmac.New(sha256.New, []byte(`Hz3Fe4578v3`))
+
+	//Write additional hash elements into the hash table for more randomness
 	io.WriteString(h, data)
 
 	// Sum appends the current hash to b and returns the resulting slice.
@@ -30,6 +32,7 @@ func main() {
 	//Handle the authentication page
 	http.HandleFunc("/auth", auth)
 
+	//Server the pages to the requests
 	fmt.Println(http.ListenAndServe(":8080", nil))
 }
 

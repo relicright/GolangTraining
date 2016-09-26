@@ -2,6 +2,8 @@ package main
 
 import (
 	"net/http"
+
+	// USE - 'go get github.com/nu7hatch/gouuid'
 	"github.com/nu7hatch/gouuid"
 	"fmt"
 	"io"
@@ -44,5 +46,4 @@ func Homepage(w http.ResponseWriter, r *http.Request)  {
 	//Display the cookie value on the page
 	w.Header().Set("Content-Type", "text/html; charset=utf-8")
 	io.WriteString(w, `<h1>` + cookie.Value + `</h1>`)
-
 }
